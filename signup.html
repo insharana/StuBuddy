@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Study Buddy</title>
+  <style>
+        /* Full page centering using Flexbox */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* subtle gradient */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Container holding heading + form */
+        .signup-container {
+            text-align: center;
+        }
+
+        /* Heading */
+        .signup-container h1 {
+            font-size: 36px;
+            color: #1a73e8;
+            margin-bottom: 25px;
+        }
+
+        /* Form card */
+        #signupForm {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        /* Inputs & selects */
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #155ab6;
+        }
+
+        /* Responsive for small devices */
+        @media (max-width: 400px) {
+            #signupForm {
+                width: 90%;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+
+
+<form id="signupForm">
+  <h2> &nbsp;&nbsp; Sign Up-StuBuddy</h2>
+  <input type="text" id="name" placeholder="Full Name" required><br><br>
+  <input type="email" id="email" placeholder="University Email" required><br><br>
+  <input type="password" id="password" placeholder="Password" required><br><br>
+
+  <select id="department" required>
+    <option value="">Select Department</option>
+    <option value="BSCS">BSCS</option>
+    <option value="BBA">BBA</option>
+  </select><br><br>
+
+  <select id="semester" required>
+    <option value="">Select Semester</option>
+    <option value="1">Semester 1</option>
+    <option value="2">Semester 2</option>
+    <option value="3">Semester 3</option>
+  </select><br><br>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+<script src="js/signup.js"></script>
+</body>
+</html>
